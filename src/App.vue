@@ -5,7 +5,13 @@
         <h1>Routing</h1>
         <hr />
         <router-view name="header-top"></router-view>
-        <router-view></router-view>
+        <transition
+          enter-active-class="animated slideInLeft"
+          leave-active-class="animated slideOutRight"
+          mode="out-in"
+        >
+          <router-view></router-view>
+        </transition>
         <router-view name="header-bottom"></router-view>
       </div>
     </div>
