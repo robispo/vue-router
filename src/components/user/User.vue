@@ -4,6 +4,8 @@
     <hr />
     <p>Id: {{ id }}</p>
     <button class="btn btn-primary" @click.prevent="navHome">Home</button>
+    <hr />
+    <router-view></router-view>
   </div>
 </template>
 
