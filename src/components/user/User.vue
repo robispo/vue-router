@@ -29,7 +29,7 @@
     },
     methods: {
       navHome() {
-        this.$router.push({ path: '/' });
+        this.$router.push({ name: 'home' });
       }
     }
   };
