@@ -30,5 +30,6 @@ export const routes = [
   {
     path: '/redirect',
     redirect: { name: 'home' }
-  }
+  },
+  { path: '*', redirect: { name: 'home' } }
 ];
