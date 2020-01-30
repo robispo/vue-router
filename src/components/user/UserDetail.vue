@@ -20,6 +20,10 @@
           hash: '#data'
         }
       };
+    },
+    beforeRouteEnter(to, from, next) {
+      console.log('/:id beforeRouteEnter');
+      next();
     }
   };
 </script>
